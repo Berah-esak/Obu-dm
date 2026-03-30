@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard - OBU Dormitory</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="loadStudentDashboard()">
+    <div class="container">
+        <div class="dashboard">
+            <div class="dashboard-header">
+                <h1>🏠 Student Dashboard</h1>
+                <button onclick="logout()" class="logout-btn">Logout</button>
+            </div>
+            
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3>👤</h3>
+                    <p>Welcome, <span id="userName"></span></p>
+                </div>
+            </div>
+            
+            <div class="stat-card" style="background: linear-gradient(135deg, #28a745 0%, #20c997 100%);">
+                <h3>🏠 Your Current Room</h3>
+                <div id="currentRoom"></div>
+            </div>
+            
+            <h2>Available Rooms</h2>
+            <div id="roomList" class="room-grid"></div>
+            
+            <h2>Submit Maintenance Request</h2>
+            <div class="request-form">
+                <textarea id="maintenanceIssue" rows="3" placeholder="Describe your maintenance issue..."></textarea>
+                <button onclick="submitMaintenance()" class="submit-btn" style="margin-top: 10px;">Submit Request</button>
+            </div>
+            
+            <h2>Your Maintenance Requests</h2>
+            <div id="maintenanceList"></div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - OBU Dormitory</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="loadAdminDashboard()">
+    <div class="container">
+        <div class="dashboard">
+            <div class="dashboard-header">
+                <h1>👨‍💼 Admin Dashboard</h1>
+                <button onclick="logout()" class="logout-btn">Logout</button>
+            </div>
+            
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3 id="totalRooms">0</h3>
+                    <p>Total Rooms</p>
+                </div>
+                <div class="stat-card">
+                    <h3 id="bookedRooms">0</h3>
+                    <p>Booked Rooms</p>
+                </div>
+                <div class="stat-card">
+                    <h3 id="availableRooms">0</h3>
+                    <p>Available Rooms</p>
+                </div>
+            </div>
+            
+            <h2>All Rooms</h2>
+            <div id="allRooms" class="room-grid"></div>
+            
+            <h2>Pending Maintenance Requests</h2>
+            <div id="pendingMaintenance"></div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

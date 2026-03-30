@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OBU Dormitory Management System - Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="login-box">
+            <h1>🏠 OBU Dormitory Management System</h1>
+            <p style="text-align: center; color: #666; margin-bottom: 30px;">Login to access your dashboard</p>
+            
+            <div class="input-group">
+                <label>Select Role</label>
+                <select id="role">
+                    <option value="student">Student</option>
+                    <option value="admin">Admin</option>
+                </select>
+            </div>
+            
+            <div class="input-group">
+                <label>Student/Staff ID</label>
+                <input type="text" id="userID" placeholder="Enter your ID">
+            </div>
+            
+            <div class="input-group">
+                <label>Password</label>
+                <input type="password" id="password" placeholder="Enter password">
+            </div>
+            
+            <button onclick="login()" class="login-btn">Login</button>
+            
+            <p style="text-align: center; margin-top: 20px; font-size: 14px; color: #888;">
+                Demo Credentials:<br>
+                Student: ID: 12345, Password: student<br>
+                Admin: ID: admin123, Password: admin
+            </p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
